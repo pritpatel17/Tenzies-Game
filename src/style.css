@@ -1,0 +1,76 @@
+/* style.css */
+
+/* Styles for Die Component */
+.die-face {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.die-face:hover {
+    background-color: #f0f0f0;
+}
+
+.die-num {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Styles for App Component */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.dice-container {
+    display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        /* Five columns */
+        gap: 20px;
+        /* Gap between dice */
+        justify-content: center;
+        margin-bottom: 20px;
+        /* Space below the dice container */
+        padding:10px;
+        border: 1px solid black;
+}
+
+.roll-dice {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.roll-dice:hover {
+    background-color: #0056b3;
+}
+
+.custom-button {
+    margin: 20px;
+    /* padding: 10px 20px; */
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 1s ease-in-out;
+}
+
+.custom-button:hover {
+    background-color: #020f1c;
+}
+
